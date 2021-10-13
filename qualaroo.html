@@ -1,0 +1,283 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <link href="./styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <style>
+     /* Tutorial CSS goes here */
+    </style>
+    <script>      
+        jQuery(function($) {
+            var $bodyEl = $('body'),
+                $sidedrawerEl = $('#sidedrawer');
+
+
+            function showSidedrawer() {
+              // show overlay
+              var options = {
+                onclose: function() {
+                  $sidedrawerEl
+                    .removeClass('active')
+                    .appendTo(document.body);
+                }
+              };
+
+              var $overlayEl = $(mui.overlay('on', options));
+
+              // show element
+              $sidedrawerEl.appendTo($overlayEl);
+              setTimeout(function() {
+                $sidedrawerEl.addClass('active');
+              }, 20);
+            }
+
+
+            function hideSidedrawer() {
+              $bodyEl.toggleClass('hide-sidedrawer');
+            }
+
+
+            $('.js-show-sidedrawer').on('click', showSidedrawer);
+            $('.js-hide-sidedrawer').on('click', hideSidedrawer);
+          });
+        var $titleEls = $('strong', $sidedrawerEl);
+
+        $titleEls
+          .next()
+          .hide();
+
+        $titleEls.on('click', function() {
+          $(this).next().slideToggle(200);
+        });    
+    </script>
+  </head>
+  <body>
+  
+<!-- Qualaroo for reliefweb.int -->
+<!-- Paste this code right after the <body> tag on every page of your site. -->
+<script type="text/javascript">
+  var _kiq = _kiq || [];
+  (function(){
+    setTimeout(function(){
+    var d = document, f = d.getElementsByTagName('script')[0], s = d.createElement('script'); s.type = 'text/javascript';
+    s.async = true; s.src = 'https://cl.qualaroo.com/ki.js/79701/iuq.js'; f.parentNode.insertBefore(s, f);
+    }, 1);
+  })();
+</script>
+  
+
+
+<div id="sidedrawer" class="mui--no-user-select">
+
+<div id="sidedrawer-brand" class="mui--appbar-line-height">
+  <span class="mui--text-title">Select option</span>
+</div>
+<div class="mui-divider"></div>
+<ul>
+  <li>
+    <strong>Hotjar</strong>
+    <ul>
+      <li><a href="./hotjar.html">Demo page</a></li>
+
+    </ul>
+  </li>
+  <li>
+    <strong>Qualaroo</strong>
+    <ul>
+      <li><a href="./qualaroo.html">Demo page</a></li>
+
+    </ul>
+  </li>
+</ul>
+
+
+</div>
+<header id="header">
+  <div class="mui-appbar mui--appbar-line-height">
+    <div class="mui-container-fluid">
+      <a class="sidedrawer-toggle mui--visible-xs-inline-block mui--visible-sm-inline-block js-show-sidedrawer">☰</a>
+      <a class="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer">☰</a>
+      <span class="mui--text-title mui--visible-xs-inline-block">Brand.io</span>
+    </div>
+  </div>
+</header>
+<div id="content-wrapper">
+    <div class="mui--appbar-height"></div>
+    <div class="mui-container-fluid">
+        <h1 id="main_title">Click one of the options to the left</h1>
+            <section>
+                <h2>Title</h2>
+                <div id="latest-reports" class="reports_block">
+				
+				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+				
+				</div>
+				
+								<ul>
+				   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+				   <li>Aliquam tincidunt mauris eu risus.</li>
+				   <li>Vestibulum auctor dapibus neque.</li>
+				</ul>
+						 
+						 
+						 <nav>
+				  <ul>
+					<li><a href="#nowhere" title="Lorum ipsum dolor sit amet">Lorem</a></li>
+					<li><a href="#nowhere" title="Aliquam tincidunt mauris eu risus">Aliquam</a></li>
+					<li><a href="#nowhere" title="Morbi in sem quis dui placerat ornare">Morbi</a></li>
+					<li><a href="#nowhere" title="Praesent dapibus, neque id cursus faucibus">Praesent</a></li>
+					<li><a href="#nowhere" title="Pellentesque fermentum dolor">Pellentesque</a></li>
+				  </ul>
+				</nav>
+							
+							
+<dl>
+						   <dt>Definition list</dt>
+						   <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+						aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+						commodo consequat.</dd>
+						   <dt>Lorem ipsum dolor sit amet</dt>
+						   <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+						aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+						commodo consequat.</dd>
+						</dl>							
+            </section>
+			
+           <section>
+                <h2>Title</h2>
+                <div id="latest-reports" class="reports_block">
+				
+				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+				
+				</div>
+				
+								<ul>
+				   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+				   <li>Aliquam tincidunt mauris eu risus.</li>
+				   <li>Vestibulum auctor dapibus neque.</li>
+				</ul>
+						 
+						 
+						 <nav>
+				  <ul>
+					<li><a href="#nowhere" title="Lorum ipsum dolor sit amet">Lorem</a></li>
+					<li><a href="#nowhere" title="Aliquam tincidunt mauris eu risus">Aliquam</a></li>
+					<li><a href="#nowhere" title="Morbi in sem quis dui placerat ornare">Morbi</a></li>
+					<li><a href="#nowhere" title="Praesent dapibus, neque id cursus faucibus">Praesent</a></li>
+					<li><a href="#nowhere" title="Pellentesque fermentum dolor">Pellentesque</a></li>
+				  </ul>
+				</nav>
+							
+							
+<dl>
+						   <dt>Definition list</dt>
+						   <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+						aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+						commodo consequat.</dd>
+						   <dt>Lorem ipsum dolor sit amet</dt>
+						   <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+						aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+						commodo consequat.</dd>
+						</dl>							
+            </section>
+
+
+           <section>
+                <h2>Title</h2>
+                <div id="latest-reports" class="reports_block">
+				
+				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+				
+				</div>
+				
+								<ul>
+				   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+				   <li>Aliquam tincidunt mauris eu risus.</li>
+				   <li>Vestibulum auctor dapibus neque.</li>
+				</ul>
+						 
+						 
+						 <nav>
+				  <ul>
+					<li><a href="#nowhere" title="Lorum ipsum dolor sit amet">Lorem</a></li>
+					<li><a href="#nowhere" title="Aliquam tincidunt mauris eu risus">Aliquam</a></li>
+					<li><a href="#nowhere" title="Morbi in sem quis dui placerat ornare">Morbi</a></li>
+					<li><a href="#nowhere" title="Praesent dapibus, neque id cursus faucibus">Praesent</a></li>
+					<li><a href="#nowhere" title="Pellentesque fermentum dolor">Pellentesque</a></li>
+				  </ul>
+				</nav>
+							
+							
+<dl>
+						   <dt>Definition list</dt>
+						   <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+						aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+						commodo consequat.</dd>
+						   <dt>Lorem ipsum dolor sit amet</dt>
+						   <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+						aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+						commodo consequat.</dd>
+						</dl>							
+            </section>
+
+           <section>
+                <h2>Title</h2>
+                <div id="latest-reports" class="reports_block">
+				
+				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+				
+				</div>
+				
+								<ul>
+				   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+				   <li>Aliquam tincidunt mauris eu risus.</li>
+				   <li>Vestibulum auctor dapibus neque.</li>
+				</ul>
+						 
+						 
+						 <nav>
+				  <ul>
+					<li><a href="#nowhere" title="Lorum ipsum dolor sit amet">Lorem</a></li>
+					<li><a href="#nowhere" title="Aliquam tincidunt mauris eu risus">Aliquam</a></li>
+					<li><a href="#nowhere" title="Morbi in sem quis dui placerat ornare">Morbi</a></li>
+					<li><a href="#nowhere" title="Praesent dapibus, neque id cursus faucibus">Praesent</a></li>
+					<li><a href="#nowhere" title="Pellentesque fermentum dolor">Pellentesque</a></li>
+				  </ul>
+				</nav>
+							
+							
+<dl>
+						   <dt>Definition list</dt>
+						   <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+						aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+						commodo consequat.</dd>
+						   <dt>Lorem ipsum dolor sit amet</dt>
+						   <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+						aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+						commodo consequat.</dd>
+						</dl>							
+            </section>
+
+			
+			
+    </div>
+</div>
+<footer id="footer">
+  <div class="mui-container-fluid">
+    <br>
+    Experimental site made with ♥ by Miguel</a>
+  </div>
+</footer>
+
+
+  </body>
+  
+  
+<script src="./script.js"></script>
+
+</html>
